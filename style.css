@@ -18,14 +18,35 @@
 }
 
 body {
-	background-color: rgb(156, 156, 156);
+	background-color: #1d2021;
 }
 
 #game {
+	display: grid;
+	grid-template-columns: repeat(30, 1fr);
+	grid-template-rows: repeat(30, 1fr);
+	width: max-content;
+	border: solid 6px #83a598;
+	justify-self: center;
+}
+
+.row {
+	display: grid;
+	grid-template-columns: repeat(30, 1fr);
+
+
 }
 
 .pixel {
-	width: 10px;
-	height: 10px;
-	border: solid 1px black;
+	width: 20px;
+	height: 20px;
+	border: solid 1px #1d2021;
+	background-color: #ebdbb2;
+}
+
+.viewport {
+	width: 20px;
+	height: 20px;
+	border: solid 1px #1d2021;
+	background-color: #458588;
 }
